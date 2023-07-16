@@ -10,7 +10,8 @@ namespace COREWebApiJWTAuthentication.Models.Entity
 		{
 
 		}
-		public DatabaseContext(DbContextOptions<DatabaseContext> options) : base(options) { }
+		public DatabaseContext(DbContextOptions<DatabaseContext> options) : base(options) { 
+		}
 
 		public virtual DbSet<Employee>? Employees { get; set; }
 		public virtual DbSet<UserInfo>? UserInfo { get; set; }
